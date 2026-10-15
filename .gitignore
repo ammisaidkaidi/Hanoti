@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────────
+# Credentials — this repository is PUBLIC. Never commit these.
+# ─────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.git-credentials
+.netrc
+
+# ─────────────────────────────────────────────────────────────
+# Dependency trees and virtualenvs
+# Third-party code, platform-specific binaries, tens of MB.
+# Reproducible from package.json / package-lock.json / requirements.txt.
+# ─────────────────────────────────────────────────────────────
+node_modules/
+pyenv/
+.venv/
+venv/
+
+# ─────────────────────────────────────────────────────────────
+# Python bytecode and local output
+# ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.log
+.cache/
