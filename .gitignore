@@ -29,6 +29,9 @@ venv/
 **/coverage/
 **/.tmp/
 **/*.tsbuildinfo
+**/tests/screenshots/
+**/.uml/
+**/.playwright/
 
 # ─────────────────────────────────────────────────────────────
 # Python bytecode and local output
