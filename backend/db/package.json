@@ -1,0 +1,31 @@
+{
+  "name": "hanouti-db",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Provisioning, migration and inspection helpers for the hanouti PostgreSQL database",
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24.11.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "help": "node dist/cli.js help",
+    "setup": "node dist/cli.js setup",
+    "migrate": "node dist/cli.js migrate",
+    "seed": "node dist/cli.js seed",
+    "status": "node dist/cli.js status",
+    "check": "node dist/cli.js check",
+    "verify": "node dist/cli.js verify",
+    "parity": "node test/connection-policy.parity.mjs",
+    "test": "node test/normalization.test.mjs && node test/connection-policy.parity.mjs"
+  },
+  "dependencies": {
+    "pg": "8.23.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/pg": "8.23.1",
+    "typescript": "~5.9.3"
+  }
+}

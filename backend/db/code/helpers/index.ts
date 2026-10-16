@@ -1,0 +1,32 @@
+export { withClient, clientConfigFromUrl, PgClient, type ConnectOptions } from './connections.js';
+export {
+  businessSchemas,
+  databaseSummary,
+  extensions,
+  healthcheck,
+  ledgerExists,
+  ledgerRows,
+  routines,
+  schemaSummary,
+  serverIdentity,
+  type BusinessSchema,
+  type ConnectionHealth,
+  type DatabaseSummary,
+  type ExtensionSummary,
+  type RoutineRow,
+  type SchemaSummary,
+  type ServerIdentity,
+} from './inspect.js';
+export {
+  loadManifests,
+  summarize,
+  verifyRoutineGrants,
+  verifyRoutines,
+  verifyTables,
+  type ColumnExpectation,
+  type Finding,
+  type FindingSummary,
+  type ManifestSet,
+  type RoutineExpectation,
+  type TableExpectation,
+} from './verify.js';
